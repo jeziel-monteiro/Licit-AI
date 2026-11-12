@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "notice": "Casos públicos reais. As classificações são propostas de desenvolvimento pendentes de revisão humana, não rótulos de referência validados. Nenhuma resposta de modelo está neste arquivo.",
+  "dataset": {
+    "sourceUrl": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?dataInicial=20261112&dataFinal=20261112&codigoModalidadeContratacao=6&uf=SP&pagina=1&tamanhoPagina=50",
+    "collectedAt": "2026-11-12T20:59:43.496Z",
+    "sampleFile": "data/pncp-sample.json"
+  },
+  "profile": {
+    "name": "Horizonte Informática",
+    "description": "Empresa que vende computadores, monitores e periféricos. Busca aquisições de equipamentos em São Paulo. Não oferece manutenção nem locação.",
+    "interestTerms": [
+      "computador",
+      "notebook",
+      "monitor",
+      "periféricos",
+      "informática"
+    ],
+    "exclusionTerms": [
+      "manutenção",
+      "locação"
+    ],
+    "uf": "SP"
+  },
+  "cases": [
+    {
+      "opportunityId": "57522468000163-1-000227/2026",
+      "sourceUrl": "https://pncp.gov.br/app/editais/57522468000163/2026/227",
+      "description": " - Aquisição de computadores",
+      "scenario": "clear_compatibility",
+      "proposedClassification": "possivel_aderencia",
+      "proposalReason": "O objeto informa aquisição de computadores, produto oferecido no perfil demonstrativo.",
+      "reviewStatus": "pending_human_review"
+    },
+    {
+      "opportunityId": "03659166002156-1-000159/2026",
+      "sourceUrl": "https://pncp.gov.br/app/editais/03659166002156/2026/159",
+      "description": "Aquisição de alimentos hortifrutigranjeiros para os animais do Centro de Triagem de Animais Silvestres (CETAS) do IBAMA em Lorena/SP.",
+      "scenario": "clear_incompatibility",
+      "proposedClassification": "fora_do_perfil",
+      "proposalReason": "O objeto é aquisição de alimentos para animais, fora dos produtos e serviços declarados.",
+      "reviewStatus": "pending_human_review"
+    },
+    {
+      "opportunityId": "00394452000103-1-024299/2026",
+      "sourceUrl": "https://pncp.gov.br/app/editais/00394452000103/2026/24299",
+      "description": "Contratação de Serviço de Manutenção de Viaturas não Blindadas.",
+      "scenario": "explicit_exclusion",
+      "proposedClassification": "fora_do_perfil",
+      "proposalReason": "O objeto é serviço de manutenção de viaturas; o perfil não oferece manutenção nem serviços automotivos.",
+      "reviewStatus": "pending_human_review"
+    },
+    {
+      "opportunityId": "07722779000106-1-000144/2026",
+      "sourceUrl": "https://pncp.gov.br/app/editais/07722779000106/2026/144",
+      "description": "Aquisição de materiais permanentes para utilização em aulas práticas do curso de Engenharia Aeroespacial.",
+      "scenario": "insufficient_description",
+      "proposedClassification": "precisa_de_revisao",
+      "proposalReason": "A descrição de materiais permanentes para aulas de engenharia não identifica os itens; não basta para concluir incompatibilidade ou aderência.",
+      "reviewStatus": "pending_human_review"
+    },
+    {
+      "opportunityId": "60453032000174-1-000310/2026",
+      "sourceUrl": "https://pncp.gov.br/app/editais/60453032000174/2026/310",
+      "description": "Aq. Impressoras 3D e Insumos _ Req. Licitação Compartilhada_ Rec: Inovalab",
+      "scenario": "ambiguous_scope",
+      "proposedClassification": "precisa_de_revisao",
+      "proposalReason": "Impressoras 3D e insumos não estão explicitamente cobertos pelo perfil de computadores, monitores e periféricos; é preciso confirmar o catálogo.",
+      "reviewStatus": "pending_human_review"
+    }
+  ]
+}
