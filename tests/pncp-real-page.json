@@ -1,0 +1,609 @@
+{
+  "data": [
+    {
+      "valorTotalHomologado": null,
+      "orgaoEntidade": {
+        "cnpj": "05051955000191",
+        "razaoSocial": "AGENCIA REGULADORA DE SERVICOS PUBLICOS DELEGADOS DE TRANSPORTE DO ESTADO DE SAO PAULO-ARTESP",
+        "poderId": "E",
+        "esferaId": "E"
+      },
+      "dataInclusao": "2026-11-10T00:11:18",
+      "dataAtualizacao": "2026-11-10T00:11:18",
+      "anoCompra": 2026,
+      "sequencialCompra": 27,
+      "emendaParlamentar": null,
+      "numeroCompra": "25",
+      "processo": "134.00012246/2026-19",
+      "objetoCompra": "Contratação de serviços transporte mediante locação de veículos novos, em caráter não eventual (para utilização em serviço público de natureza permanente ou de longa duração), nas Modalidades: “A” (sem condutor e sem combustível) e “C” (com condutor e com combustível), com a disponibilização de Base operacional fixa (Centro de controle de operações) e “equipamentos veiculares especiais”, com gerenciamento total da frota objetivando o deslocamento para apoio das atividades técnico-administrativas da ARTESP e de Base Operacional Móvel com personalização e “equipamentos veiculares especiais”.",
+      "informacaoComplementar": "Menor Preço Global do Item - preço global para 30 (trinta) meses.",
+      "dataAberturaProposta": "2026-11-10T09:30:00",
+      "dataEncerramentoProposta": "2026-11-25T09:30:00",
+      "dataPublicacaoPncp": "2026-11-10T00:11:18",
+      "dataAtualizacaoGlobal": "2026-11-10T00:12:20",
+      "unidadeOrgao": {
+        "ufNome": "São Paulo",
+        "ufSigla": "SP",
+        "municipioNome": "São Paulo",
+        "codigoUnidade": "392601",
+        "nomeUnidade": "ESP - AG.REG.SERV.PUBL.DELEG.TRANSP.EST.SP.",
+        "codigoIbge": "3550308"
+      },
+      "srp": false,
+      "orgaoSubRogado": null,
+      "unidadeSubRogada": null,
+      "amparoLegal": {
+        "nome": "Lei 14.133/2021, Art. 28, I",
+        "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+        "codigo": 1
+      },
+      "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=39260105000252026",
+      "linkProcessoEletronico": "https://sei.sp.gov.br/sei/controlador.php?acao=procedimento_trabalhar&id_procedimento=119077275",
+      "justificativaPresencial": null,
+      "numeroControlePNCP": "05051955000191-1-000027/2026",
+      "valorTotalEstimado": 74357769.52,
+      "modalidadeId": 6,
+      "modalidadeNome": "Pregão - Eletrônico",
+      "modoDisputaId": 1,
+      "modoDisputaNome": "Aberto",
+      "tipoInstrumentoConvocatorioCodigo": 1,
+      "tipoInstrumentoConvocatorioNome": "Edital",
+      "fontesOrcamentarias": [
+        {
+          "codigo": 3,
+          "nome": "Estadual",
+          "descricao": "Recurso orçamentário estadual disponível e devidamente vinculado à despesa que será realizada.",
+          "dataInclusao": "2026-11-10T00:11:19"
+        }
+      ],
+      "situacaoCompraId": 1,
+      "situacaoCompraNome": "Divulgada no PNCP",
+      "usuarioNome": "Compras.gov.br"
+    },
+    {
+      "valorTotalHomologado": null,
+      "orgaoEntidade": {
+        "cnpj": "59949362000176",
+        "razaoSocial": "TRIBUNAL REGIONAL FEDERAL 3 REGIAO",
+        "poderId": "J",
+        "esferaId": "F"
+      },
+      "dataInclusao": "2026-11-10T06:30:07",
+      "dataAtualizacao": "2026-11-10T06:30:07",
+      "anoCompra": 2026,
+      "sequencialCompra": 136,
+      "emendaParlamentar": null,
+      "numeroCompra": "88",
+      "processo": "0041243-81.2025.4.03.8000",
+      "objetoCompra": "Contratação de serviços de engenharia para manutenção preventiva, corretiva e preditiva com fornecimento de peças da Sala Cofre e respectivos subsistemas instalados no Ed. Sede deste Tribunal Regional Federal da 3ª Região - TRF3.",
+      "informacaoComplementar": "Órgão não integrante do SISG.",
+      "dataAberturaProposta": "2026-11-10T08:00:00",
+      "dataEncerramentoProposta": "2026-11-26T10:00:00",
+      "dataPublicacaoPncp": "2026-11-10T06:30:07",
+      "dataAtualizacaoGlobal": "2026-11-10T06:31:10",
+      "unidadeOrgao": {
+        "ufNome": "São Paulo",
+        "ufSigla": "SP",
+        "municipioNome": "São Paulo",
+        "codigoUnidade": "090029",
+        "nomeUnidade": "TRIBUNAL REGIONAL FEDERAL DA 3A.REGIAO",
+        "codigoIbge": "3550308"
+      },
+      "srp": false,
+      "orgaoSubRogado": null,
+      "unidadeSubRogada": null,
+      "amparoLegal": {
+        "nome": "Lei 14.133/2021, Art. 28, I",
+        "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+        "codigo": 1
+      },
+      "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=09002905000882026",
+      "linkProcessoEletronico": "https://sei.trf3.jus.br/sei/controlador_externo.php?acao=usuario_externo_logar&id_orgao_acesso_externo=0",
+      "justificativaPresencial": null,
+      "numeroControlePNCP": "59949362000176-1-000136/2026",
+      "valorTotalEstimado": 1261906.7,
+      "modalidadeId": 6,
+      "modalidadeNome": "Pregão - Eletrônico",
+      "modoDisputaId": 1,
+      "modoDisputaNome": "Aberto",
+      "tipoInstrumentoConvocatorioCodigo": 1,
+      "tipoInstrumentoConvocatorioNome": "Edital",
+      "fontesOrcamentarias": [
+        {
+          "codigo": 4,
+          "nome": "Federal",
+          "descricao": "Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.",
+          "dataInclusao": "2026-11-10T06:30:07"
+        }
+      ],
+      "situacaoCompraId": 1,
+      "situacaoCompraNome": "Divulgada no PNCP",
+      "usuarioNome": "Compras.gov.br"
+    },
+    {
+      "valorTotalHomologado": null,
+      "orgaoEntidade": {
+        "cnpj": "10882594000165",
+        "razaoSocial": "INSTITUTO FEDERAL DE EDUCACAO, CIENCIA E TECNOLOGIA DE SAO PAULO",
+        "poderId": "E",
+        "esferaId": "F"
+      },
+      "dataInclusao": "2026-11-10T06:30:07",
+      "dataAtualizacao": "2026-11-10T06:30:07",
+      "anoCompra": 2026,
+      "sequencialCompra": 689,
+      "emendaParlamentar": null,
+      "numeroCompra": "73",
+      "processo": "23308.001190.2025-90",
+      "objetoCompra": "Contratação de serviços de manutenção predial (preventiva e corretiva) e conservação de bens móveis e imóveis do Campus Guarulhos. Inclui mão de obra residente (dedicação exclusiva) e não residente, além de peças de reposição, materiais de consumo e locação de equipamentos. Serviço essencial para garantir a infraestrutura física, estrutural e elétrica das instalações.",
+      "informacaoComplementar": null,
+      "dataAberturaProposta": "2026-11-10T08:00:00",
+      "dataEncerramentoProposta": "2026-11-25T10:00:00",
+      "dataPublicacaoPncp": "2026-11-10T06:30:07",
+      "dataAtualizacaoGlobal": "2026-11-10T06:31:21",
+      "unidadeOrgao": {
+        "ufNome": "São Paulo",
+        "ufSigla": "SP",
+        "municipioNome": "Guarulhos",
+        "codigoUnidade": "158348",
+        "nomeUnidade": "INST FED.DE SAO PAULO/CAMPUS GUARULHOS - SP",
+        "codigoIbge": "3518800"
+      },
+      "srp": false,
+      "orgaoSubRogado": null,
+      "unidadeSubRogada": null,
+      "amparoLegal": {
+        "nome": "Lei 14.133/2021, Art. 28, I",
+        "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+        "codigo": 1
+      },
+      "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=15834805000732026",
+      "linkProcessoEletronico": "https://suap.ifsp.edu.br/processo_eletronico/visualizacao_documentos_processo/525365/",
+      "justificativaPresencial": null,
+      "numeroControlePNCP": "10882594000165-1-000689/2026",
+      "valorTotalEstimado": 417529.23,
+      "modalidadeId": 6,
+      "modalidadeNome": "Pregão - Eletrônico",
+      "modoDisputaId": 3,
+      "modoDisputaNome": "Aberto-Fechado",
+      "tipoInstrumentoConvocatorioCodigo": 1,
+      "tipoInstrumentoConvocatorioNome": "Edital",
+      "fontesOrcamentarias": [
+        {
+          "codigo": 4,
+          "nome": "Federal",
+          "descricao": "Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.",
+          "dataInclusao": "2026-11-10T06:30:08"
+        }
+      ],
+      "situacaoCompraId": 1,
+      "situacaoCompraNome": "Divulgada no PNCP",
+      "usuarioNome": "Compras.gov.br"
+    },
+    {
+      "valorTotalHomologado": null,
+      "orgaoEntidade": {
+        "cnpj": "00394429000100",
+        "razaoSocial": "COMANDO DA AERONAUTICA",
+        "poderId": "E",
+        "esferaId": "F"
+      },
+      "dataInclusao": "2026-11-10T06:30:10",
+      "dataAtualizacao": "2026-11-10T06:30:10",
+      "anoCompra": 2026,
+      "sequencialCompra": 2977,
+      "emendaParlamentar": null,
+      "numeroCompra": "208",
+      "processo": "67511.001023/2026-90",
+      "objetoCompra": "AQUISIÇÃO DE MATERIAL DE LIMPEZA DE USO ADMINISTRATIVO",
+      "informacaoComplementar": null,
+      "dataAberturaProposta": "2026-11-10T08:00:00",
+      "dataEncerramentoProposta": "2026-11-23T09:00:00",
+      "dataPublicacaoPncp": "2026-11-10T06:30:10",
+      "dataAtualizacaoGlobal": "2026-11-10T06:31:25",
+      "unidadeOrgao": {
+        "ufNome": "São Paulo",
+        "ufSigla": "SP",
+        "municipioNome": "Pirassununga",
+        "codigoUnidade": "120060",
+        "nomeUnidade": "ACADEMIA DA FORCA AEREA",
+        "codigoIbge": "3539301"
+      },
+      "srp": true,
+      "orgaoSubRogado": null,
+      "unidadeSubRogada": null,
+      "amparoLegal": {
+        "nome": "Lei 14.133/2021, Art. 28, I",
+        "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+        "codigo": 1
+      },
+      "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=12006005002082026",
+      "linkProcessoEletronico": "https://www2.fab.mil.br/licitacoesecontratos/index.php",
+      "justificativaPresencial": null,
+      "numeroControlePNCP": "00394429000100-1-002977/2026",
+      "valorTotalEstimado": 84848.34,
+      "modalidadeId": 6,
+      "modalidadeNome": "Pregão - Eletrônico",
+      "modoDisputaId": 3,
+      "modoDisputaNome": "Aberto-Fechado",
+      "tipoInstrumentoConvocatorioCodigo": 1,
+      "tipoInstrumentoConvocatorioNome": "Edital",
+      "fontesOrcamentarias": [
+        {
+          "codigo": 4,
+          "nome": "Federal",
+          "descricao": "Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.",
+          "dataInclusao": "2026-11-10T06:30:11"
+        }
+      ],
+      "situacaoCompraId": 1,
+      "situacaoCompraNome": "Divulgada no PNCP",
+      "usuarioNome": "Compras.gov.br"
+    },
+    {
+      "valorTotalHomologado": null,
+      "orgaoEntidade": {
+        "cnpj": "60453032000174",
+        "razaoSocial": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+        "poderId": "E",
+        "esferaId": "F"
+      },
+      "dataInclusao": "2026-11-10T06:30:11",
+      "dataAtualizacao": "2026-11-10T06:30:11",
+      "anoCompra": 2026,
+      "sequencialCompra": 302,
+      "emendaParlamentar": null,
+      "numeroCompra": "634",
+      "processo": "23089.011722/2026-18",
+      "objetoCompra": "Eventual contratação de empresa especializada na prestação de serviço de transporte de mudanças, incluindo veículos, mão de obra, equipamentos necessários para o deslocamento dos materiais, serviço de desmontagem, embalagem na origem, transporte de mobiliários, equipamentos, descarte de materiais inservíveis no destino indicado pela Universidade Federal de São Paulo",
+      "informacaoComplementar": "Licitação por grupo - Campus São Paulo e Osasco",
+      "dataAberturaProposta": "2026-11-10T08:00:00",
+      "dataEncerramentoProposta": "2026-11-25T09:00:00",
+      "dataPublicacaoPncp": "2026-11-10T06:30:11",
+      "dataAtualizacaoGlobal": "2026-11-10T06:31:22",
+      "unidadeOrgao": {
+        "ufNome": "São Paulo",
+        "ufSigla": "SP",
+        "municipioNome": "São Paulo",
+        "codigoUnidade": "153031",
+        "nomeUnidade": "MEC-UNIVERSIDADE FEDERAL DE SAO PAULO/SP",
+        "codigoIbge": "3550308"
+      },
+      "srp": true,
+      "orgaoSubRogado": null,
+      "unidadeSubRogada": null,
+      "amparoLegal": {
+        "nome": "Lei 14.133/2021, Art. 28, I",
+        "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+        "codigo": 1
+      },
+      "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=15303105006342026",
+      "linkProcessoEletronico": "https://sei.unifesp.br/sei/controlador.php?acao=procedimento_trabalhar&id_procedimento=3603262",
+      "justificativaPresencial": null,
+      "numeroControlePNCP": "60453032000174-1-000302/2026",
+      "valorTotalEstimado": 530675.0,
+      "modalidadeId": 6,
+      "modalidadeNome": "Pregão - Eletrônico",
+      "modoDisputaId": 1,
+      "modoDisputaNome": "Aberto",
+      "tipoInstrumentoConvocatorioCodigo": 1,
+      "tipoInstrumentoConvocatorioNome": "Edital",
+      "fontesOrcamentarias": [
+        {
+          "codigo": 4,
+          "nome": "Federal",
+          "descricao": "Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.",
+          "dataInclusao": "2026-11-10T06:30:11"
+        }
+      ],
+      "situacaoCompraId": 1,
+      "situacaoCompraNome": "Divulgada no PNCP",
+      "usuarioNome": "Compras.gov.br"
+    },
+    {
+      "valorTotalHomologado": null,
+      "orgaoEntidade": {
+        "cnpj": "07722779000106",
+        "razaoSocial": "FUNDACAO UNIVERSIDADE FEDERAL DO ABC - UFABC",
+        "poderId": "E",
+        "esferaId": "F"
+      },
+      "dataInclusao": "2026-11-10T06:30:14",
+      "dataAtualizacao": "2026-11-12T04:04:09",
+      "anoCompra": 2026,
+      "sequencialCompra": 141,
+      "emendaParlamentar": null,
+      "numeroCompra": "223",
+      "processo": "23006.006809/2026-38",
+      "objetoCompra": "Aquisição de solução de VPN composta por 2 (dois) gateways redundantes de alta performance\n",
+      "informacaoComplementar": null,
+      "dataAberturaProposta": "2026-11-12T09:00:00",
+      "dataEncerramentoProposta": "2026-11-26T15:00:00",
+      "dataPublicacaoPncp": "2026-11-10T06:30:14",
+      "dataAtualizacaoGlobal": "2026-11-12T04:04:09",
+      "unidadeOrgao": {
+        "ufNome": "São Paulo",
+        "ufSigla": "SP",
+        "municipioNome": "Santo André",
+        "codigoUnidade": "154503",
+        "nomeUnidade": "FUNDAÇÃO UNIVERSIDADE FEDERAL DO ABC",
+        "codigoIbge": "3547809"
+      },
+      "srp": false,
+      "orgaoSubRogado": null,
+      "unidadeSubRogada": null,
+      "amparoLegal": {
+        "nome": "Lei 14.133/2021, Art. 28, I",
+        "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+        "codigo": 1
+      },
+      "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=15450305002232026",
+      "linkProcessoEletronico": "https://sig.ufabc.edu.br/sipac/protocolo/mesa_virtual/processo.jsf",
+      "justificativaPresencial": null,
+      "numeroControlePNCP": "07722779000106-1-000141/2026",
+      "valorTotalEstimado": 142007.5,
+      "modalidadeId": 6,
+      "modalidadeNome": "Pregão - Eletrônico",
+      "modoDisputaId": 1,
+      "modoDisputaNome": "Aberto",
+      "tipoInstrumentoConvocatorioCodigo": 1,
+      "tipoInstrumentoConvocatorioNome": "Edital",
+      "fontesOrcamentarias": [
+        {
+          "codigo": 4,
+          "nome": "Federal",
+          "descricao": "Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.",
+          "dataInclusao": "2026-11-10T06:30:14"
+        }
+      ],
+      "situacaoCompraId": 1,
+      "situacaoCompraNome": "Divulgada no PNCP",
+      "usuarioNome": "Compras.gov.br"
+    },
+    {
+      "valorTotalHomologado": null,
+      "orgaoEntidade": {
+        "cnpj": "60453032000174",
+        "razaoSocial": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+        "poderId": "E",
+        "esferaId": "F"
+      },
+      "dataInclusao": "2026-11-10T06:30:14",
+      "dataAtualizacao": "2026-11-10T06:30:14",
+      "anoCompra": 2026,
+      "sequencialCompra": 303,
+      "emendaParlamentar": null,
+      "numeroCompra": "661",
+      "processo": "23089.038598/2026-20",
+      "objetoCompra": "Aq. Mesa Regulável _ Req. Licitação Compartilhada_ Rec: Inovalab",
+      "informacaoComplementar": null,
+      "dataAberturaProposta": "2026-11-10T08:00:00",
+      "dataEncerramentoProposta": "2026-11-23T09:59:00",
+      "dataPublicacaoPncp": "2026-11-10T06:30:14",
+      "dataAtualizacaoGlobal": "2026-11-10T06:30:29",
+      "unidadeOrgao": {
+        "ufNome": "São Paulo",
+        "ufSigla": "SP",
+        "municipioNome": "São Paulo",
+        "codigoUnidade": "153031",
+        "nomeUnidade": "MEC-UNIVERSIDADE FEDERAL DE SAO PAULO/SP",
+        "codigoIbge": "3550308"
+      },
+      "srp": true,
+      "orgaoSubRogado": null,
+      "unidadeSubRogada": null,
+      "amparoLegal": {
+        "nome": "Lei 14.133/2021, Art. 28, I",
+        "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+        "codigo": 1
+      },
+      "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=15303105006612026",
+      "linkProcessoEletronico": "https://sei.unifesp.br/sei/controlador.php?acao=procedimento_trabalhar&acao_origem=protocolo_pesquisa_rapida&id_protocolo=4032434&infra_sistema=100000100&infra_unidade_atual=110000135&infra_hash=ad030527e02fe5f97a2487822c3c57c78fe09813282ec00f6d96af77ea6ffae4",
+      "justificativaPresencial": null,
+      "numeroControlePNCP": "60453032000174-1-000303/2026",
+      "valorTotalEstimado": 62660.0,
+      "modalidadeId": 6,
+      "modalidadeNome": "Pregão - Eletrônico",
+      "modoDisputaId": 1,
+      "modoDisputaNome": "Aberto",
+      "tipoInstrumentoConvocatorioCodigo": 1,
+      "tipoInstrumentoConvocatorioNome": "Edital",
+      "fontesOrcamentarias": [
+        {
+          "codigo": 4,
+          "nome": "Federal",
+          "descricao": "Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.",
+          "dataInclusao": "2026-11-10T06:30:15"
+        }
+      ],
+      "situacaoCompraId": 1,
+      "situacaoCompraNome": "Divulgada no PNCP",
+      "usuarioNome": "Compras.gov.br"
+    },
+    {
+      "valorTotalHomologado": null,
+      "orgaoEntidade": {
+        "cnpj": "15126437000305",
+        "razaoSocial": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES - EBSERH",
+        "poderId": "N",
+        "esferaId": "N"
+      },
+      "dataInclusao": "2026-11-10T06:30:15",
+      "dataAtualizacao": "2026-11-10T06:30:15",
+      "anoCompra": 2026,
+      "sequencialCompra": 4634,
+      "emendaParlamentar": null,
+      "numeroCompra": "54",
+      "processo": "23763.002971/2026-13",
+      "objetoCompra": "Registro de Preços para a aquisição de BATERIAS ESTACIONÁRIAS PARA O BANCO DE BATERIAS DOS NOBREAKS, a fim de atender às necessidades do Hospital Universitário da Universidade Federal de São Carlos - HU-UFSCar, Unidade Gestora (UG) 155900, pertencente à Rede da Empresa Brasileira de Serviços Hospitalares (Rede Ebserh), por um período de 12 (doze) meses",
+      "informacaoComplementar": null,
+      "dataAberturaProposta": "2026-11-10T09:00:00",
+      "dataEncerramentoProposta": "2026-11-23T09:00:00",
+      "dataPublicacaoPncp": "2026-11-10T06:30:15",
+      "dataAtualizacaoGlobal": "2026-11-10T06:30:32",
+      "unidadeOrgao": {
+        "ufNome": "São Paulo",
+        "ufSigla": "SP",
+        "municipioNome": "São Carlos",
+        "codigoUnidade": "155900",
+        "nomeUnidade": "HOSPITAL UNIVERSITARIO DE SÃO CARLOS",
+        "codigoIbge": "3548906"
+      },
+      "srp": true,
+      "orgaoSubRogado": null,
+      "unidadeSubRogada": null,
+      "amparoLegal": {
+        "nome": "Lei 13.303/2016, Art. 32, IV",
+        "descricao": "Pregão: modalidade de licitação preferencial para a aquisição de bens e serviços comuns, assim considerados aqueles cujos padrões de desempenho e qualidade possam ser objetivamente definidos pelo edital, por meio de especificações usuais no mercado;",
+        "codigo": 113
+      },
+      "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=15590005000542026",
+      "linkProcessoEletronico": "https://sei.ebserh.gov.br/sei/modulos/ebserh/tlc/md_ebserh_tlc_processo_exibir.php?hash=MjZjYjU5OTQ1YmEzYjE3ZDU4YzA1OGE0NjFmNDM0YWViOTA4NjQ4Y2MzSnpQWHg4ZVUxbVRYcGpMMHQ2Y3pnOWZId3pOVFl3T1h4OA==",
+      "justificativaPresencial": null,
+      "numeroControlePNCP": "15126437000305-1-004634/2026",
+      "valorTotalEstimado": 0.0,
+      "modalidadeId": 6,
+      "modalidadeNome": "Pregão - Eletrônico",
+      "modoDisputaId": 1,
+      "modoDisputaNome": "Aberto",
+      "tipoInstrumentoConvocatorioCodigo": 1,
+      "tipoInstrumentoConvocatorioNome": "Edital",
+      "fontesOrcamentarias": [
+        {
+          "codigo": 4,
+          "nome": "Federal",
+          "descricao": "Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.",
+          "dataInclusao": "2026-11-10T06:30:15"
+        }
+      ],
+      "situacaoCompraId": 1,
+      "situacaoCompraNome": "Divulgada no PNCP",
+      "usuarioNome": "Compras.gov.br"
+    },
+    {
+      "valorTotalHomologado": null,
+      "orgaoEntidade": {
+        "cnpj": "00394429000100",
+        "razaoSocial": "COMANDO DA AERONAUTICA",
+        "poderId": "E",
+        "esferaId": "F"
+      },
+      "dataInclusao": "2026-11-10T06:30:18",
+      "dataAtualizacao": "2026-11-10T06:30:18",
+      "anoCompra": 2026,
+      "sequencialCompra": 2981,
+      "emendaParlamentar": null,
+      "numeroCompra": "386",
+      "processo": "67267.006467/2025-70",
+      "objetoCompra": "Aquisição de Materiais de Intendência.",
+      "informacaoComplementar": null,
+      "dataAberturaProposta": "2026-11-10T08:00:00",
+      "dataEncerramentoProposta": "2026-11-24T10:00:00",
+      "dataPublicacaoPncp": "2026-11-10T06:30:18",
+      "dataAtualizacaoGlobal": "2026-11-10T06:30:47",
+      "unidadeOrgao": {
+        "ufNome": "São Paulo",
+        "ufSigla": "SP",
+        "municipioNome": "São Paulo",
+        "codigoUnidade": "120633",
+        "nomeUnidade": "GRUPAMENTO DE APOIO DE SÃO PAULO",
+        "codigoIbge": "3550308"
+      },
+      "srp": true,
+      "orgaoSubRogado": null,
+      "unidadeSubRogada": null,
+      "amparoLegal": {
+        "nome": "Lei 14.133/2021, Art. 28, I",
+        "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+        "codigo": 1
+      },
+      "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=12063305003862026",
+      "linkProcessoEletronico": "https://pncp.gov.br/app/editais?pagina=1",
+      "justificativaPresencial": null,
+      "numeroControlePNCP": "00394429000100-1-002981/2026",
+      "valorTotalEstimado": 738500.65,
+      "modalidadeId": 6,
+      "modalidadeNome": "Pregão - Eletrônico",
+      "modoDisputaId": 3,
+      "modoDisputaNome": "Aberto-Fechado",
+      "tipoInstrumentoConvocatorioCodigo": 1,
+      "tipoInstrumentoConvocatorioNome": "Edital",
+      "fontesOrcamentarias": [
+        {
+          "codigo": 4,
+          "nome": "Federal",
+          "descricao": "Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.",
+          "dataInclusao": "2026-11-10T06:30:18"
+        }
+      ],
+      "situacaoCompraId": 1,
+      "situacaoCompraNome": "Divulgada no PNCP",
+      "usuarioNome": "Compras.gov.br"
+    },
+    {
+      "valorTotalHomologado": null,
+      "orgaoEntidade": {
+        "cnpj": "60453032000174",
+        "razaoSocial": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+        "poderId": "E",
+        "esferaId": "F"
+      },
+      "dataInclusao": "2026-11-10T06:30:19",
+      "dataAtualizacao": "2026-11-10T06:30:19",
+      "anoCompra": 2026,
+      "sequencialCompra": 304,
+      "emendaParlamentar": null,
+      "numeroCompra": "679",
+      "processo": "23089.036348/2026-55",
+      "objetoCompra": "Aquisição de equipamentos de tecnologia para o Projeto \"Infraestrutura Estratégica para a Saúde Digital\"",
+      "informacaoComplementar": null,
+      "dataAberturaProposta": "2026-11-10T08:00:00",
+      "dataEncerramentoProposta": "2026-11-23T13:00:00",
+      "dataPublicacaoPncp": "2026-11-10T06:30:19",
+      "dataAtualizacaoGlobal": "2026-11-10T06:37:34",
+      "unidadeOrgao": {
+        "ufNome": "São Paulo",
+        "ufSigla": "SP",
+        "municipioNome": "São Paulo",
+        "codigoUnidade": "153031",
+        "nomeUnidade": "MEC-UNIVERSIDADE FEDERAL DE SAO PAULO/SP",
+        "codigoIbge": "3550308"
+      },
+      "srp": false,
+      "orgaoSubRogado": null,
+      "unidadeSubRogada": null,
+      "amparoLegal": {
+        "nome": "Lei 14.133/2021, Art. 28, I",
+        "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+        "codigo": 1
+      },
+      "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=15303105006792026",
+      "linkProcessoEletronico": "https://sei.unifesp.br/sei/controlador.php?acao=procedimento_trabalhar&id_procedimento=3993280",
+      "justificativaPresencial": null,
+      "numeroControlePNCP": "60453032000174-1-000304/2026",
+      "valorTotalEstimado": 76136.0,
+      "modalidadeId": 6,
+      "modalidadeNome": "Pregão - Eletrônico",
+      "modoDisputaId": 3,
+      "modoDisputaNome": "Aberto-Fechado",
+      "tipoInstrumentoConvocatorioCodigo": 1,
+      "tipoInstrumentoConvocatorioNome": "Edital",
+      "fontesOrcamentarias": [
+        {
+          "codigo": 4,
+          "nome": "Federal",
+          "descricao": "Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.",
+          "dataInclusao": "2026-11-10T06:30:19"
+        }
+      ],
+      "situacaoCompraId": 1,
+      "situacaoCompraNome": "Divulgada no PNCP",
+      "usuarioNome": "Compras.gov.br"
+    }
+  ],
+  "totalRegistros": 1150,
+  "totalPaginas": 115,
+  "numeroPagina": 1,
+  "paginasRestantes": 114,
+  "empty": false
+}
