@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Icon } from "./icon";
 import { SaveButton } from "./forms";
+import { AnalysisStatusBadge } from "./adherence/view";
+import type { AnalysisView } from "@/lib/adherence/contracts";
 import { isHistorical, type Opportunity, type Filters } from "@/lib/domain";
 import { money, sourceDate } from "@/lib/format";
 
@@ -9,8 +11,8 @@ export function Provenance({ item }: { item: Opportunity }) {
   if (item.dataKind === "synthetic") return <span className="badge badge-warning">Sintético · teste</span>;
   return isHistorical(item) ? <span className="badge badge-warning"><Icon name="clock" size={12}/>Amostra histórica</span> : <span className="badge badge-green"><span className="status-dot"/>Coleta recente</span>;
 }
-export function OpportunityTable({ items }: { items: Opportunity[] }) {
-  return <div className="table-scroll"><table className="opportunity-table"><caption className="sr-only">Oportunidades importadas do PNCP</caption><thead><tr><th scope="col">CONTRATAÇÃO / ÓRGÃO</th><th scope="col">LOCALIZAÇÃO</th><th scope="col">VALOR ESTIMADO</th><th scope="col">PUBLICAÇÃO</th><th scope="col"><span className="sr-only">Salvar</span></th></tr></thead><tbody>{items.map((item) => <tr key={item.id}><td className="description-cell"><div className="row-meta"><span className="modality">{item.modality ?? "Modalidade não informada"}</span><Provenance item={item}/></div><Link href={detailHref(item.id)} className="opportunity-title">{item.description ?? "Descrição não informada"}</Link><p className="agency-line"><Icon name="building" size={13}/><span>{item.agency ?? "Órgão não informado"}</span></p></td><td><div className="location"><Icon name="pin" size={15}/><div>{item.city ?? "Não informado"}<small>{item.uf ?? "UF não informada"}</small></div></div></td><td className="value-cell">{money(item.estimatedValue)}<small>{item.estimatedValue === 0 ? "Zero informado pela fonte*" : "Valor total da contratação"}</small></td><td className="date-cell">{sourceDate(item.publishedAt)}<small>{item.sourceStatus ?? "Situação não informada"}</small></td><td><SaveButton id={item.id} saved={item.saved}/></td></tr>)}</tbody></table></div>;
+export function OpportunityTable({ items, analysisViews = {} }: { items: Opportunity[]; analysisViews?: Record<string, AnalysisView> }) {
+  return <div className="table-scroll"><table className="opportunity-table"><caption className="sr-only">Oportunidades importadas do PNCP</caption><thead><tr><th scope="col">CONTRATAÇÃO / ÓRGÃO</th><th scope="col">LOCALIZAÇÃO</th><th scope="col">VALOR ESTIMADO</th><th scope="col">PUBLICAÇÃO</th><th scope="col"><span className="sr-only">Salvar</span></th></tr></thead><tbody>{items.map((item) => <tr key={item.id}><td className="description-cell"><div className="row-meta"><span className="modality">{item.modality ?? "Modalidade não informada"}</span><Provenance item={item}/>{analysisViews[item.id] ? <AnalysisStatusBadge view={analysisViews[item.id]}/> : null}</div><Link href={detailHref(item.id)} className="opportunity-title">{item.description ?? "Descrição não informada"}</Link><p className="agency-line"><Icon name="building" size={13}/><span>{item.agency ?? "Órgão não informado"}</span></p></td><td><div className="location"><Icon name="pin" size={15}/><div>{item.city ?? "Não informado"}<small>{item.uf ?? "UF não informada"}</small></div></div></td><td className="value-cell">{money(item.estimatedValue)}<small>{item.estimatedValue === 0 ? "Zero informado pela fonte*" : "Valor total da contratação"}</small></td><td className="date-cell">{sourceDate(item.publishedAt)}<small>{item.sourceStatus ?? "Situação não informada"}</small></td><td><SaveButton id={item.id} saved={item.saved}/></td></tr>)}</tbody></table></div>;
 }
 export function filtersHref(filters: Filters, patch: Partial<Filters> = {}): string {
   const next = { ...filters, ...patch };
