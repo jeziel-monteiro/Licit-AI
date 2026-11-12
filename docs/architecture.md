@@ -1,5 +1,7 @@
 # Arquitetura e decisões
 
+Este documento registra as decisões das etapas 1 e 2. A implementação posterior da frente de análise individual, suas migrações aditivas e os contratos de integração estão no [handoff de aderência](handoffs/adherence-analysis.md).
+
 Aplicação única Next.js 16, React 19, TypeScript estrito e Tailwind CSS 4. O App Router renderiza páginas no servidor; componentes cliente ficam restritos à navegação ativa e aos formulários com feedback e estado de espera. O layout tem navegação responsiva, link de salto, foco visível, rótulos, tabelas semânticas e tratamento de movimento reduzido. A validação visual está pendente conforme o relatório de checks.
 
 ## Organização

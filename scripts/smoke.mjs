@@ -16,7 +16,7 @@ for (const [path, text] of [
   ["/perfil", "Produtos e serviços"],
   ["/selecionadas", "Sua seleção"],
   ["/importacoes", "Histórico de importações"],
-  [`/oportunidades/${encodeURIComponent(id)}`, "Análise com IA ainda não executada"],
+  [`/oportunidades/${encodeURIComponent(id)}`, "Análise de aderência"],
 ]) {
   const response = await fetch(new URL(path, base), { signal: AbortSignal.timeout(30000) });
   assert.equal(response.status, 200, path);

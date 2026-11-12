@@ -21,3 +21,4 @@ test-results/
 *.key
 *.p12
 *.pfx
+data/adherence-evaluations/
