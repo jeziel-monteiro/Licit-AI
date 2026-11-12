@@ -4,7 +4,7 @@
 
 Ferramenta local, em português brasileiro, para pesquisar um recorte de compras públicas do PNCP, conferir a origem e organizar uma seleção comercial. O foco inicial é equipamento de informática em São Paulo. O recorte, a UF e a modalidade são configuráveis.
 
-As etapas 1 e 2 estão implementadas: importação real e rastreável, perfil de uma empresa, pesquisa com filtros e paginação, detalhes, seleção e anotações persistentes. A etapa 3 tem somente o contrato de serviço e os tipos de análise; **não há chamadas a modelos de IA**.
+As etapas 1 e 2 estão implementadas: importação real e rastreável, perfil de uma empresa, pesquisa com filtros e paginação, detalhes, seleção e anotações persistentes. Na frente `opportunity-analysis`, a etapa 3 acrescenta análise individual via OpenAI, persistência, reutilização e indicação de resultados preliminares. Sem chave, a aplicação mostra “IA não configurada”. A validação de evidências e a revisão humana ainda dependem das integrações da equipe.
 
 O produto auxilia a triagem comercial. Não determina habilitação jurídica, não garante elegibilidade e não envia propostas.
 
@@ -95,6 +95,19 @@ Os testes usam uma resposta real preservada e variações **sintéticas restrita
 O executor de testes utiliza `--experimental-test-isolation=none` para funcionar em ambientes que restringem subprocessos; cada teste de banco usa uma instância isolada. O build usa a opção oficial `--webpack` para evitar a porta interna de compilação do Turbopack em ambientes restritos. O desenvolvimento usa o padrão do Next.js. A dependência transitiva `minimatch` de `@typescript-eslint/typescript-estree` foi fixada na linha corrigida 11.0.1+; o lockfile registra a resolução. O ESLint 9 é mantido por compatibilidade declarada pelos plugins atuais do Next.js.
 
 O smoke test verifica HTTP, conteúdo renderizado no servidor, CSS e o endpoint do registro original. Ele **não substitui testes de interação nem revisão visual em navegador**.
+
+## Análise de aderência — etapa 3
+
+Atualize seu `.env` com os campos OpenAI de [.env.example](.env.example), mantendo a chave somente no servidor. O modelo inicial configurável é `gpt-5.6-terra`. Em detalhes, “Analisar aderência” compara a oportunidade com o perfil persistido. A execução é explícita; abrir páginas não chama o modelo.
+
+O resultado fica **preliminar** até que o adaptador real de validação de evidências seja integrado. Nenhum validador simulado é utilizado na aplicação. Respostas pendentes podem ser validadas depois sem nova geração; falhas não são reutilizadas como resultados. A migração do banco é automática e aditiva, preservando os dados existentes.
+
+```bash
+npm run eval:adherence          # apresenta os cinco casos reais, sem chamada externa
+npm run eval:adherence -- --run # exige chave; até cinco gerações, com retries configurados
+```
+
+Não havia chave disponível durante a implementação; a API OpenAI **não foi validada com uma chamada real**. As classificações propostas nos casos de avaliação aguardam revisão humana. Veja o [handoff de integração](docs/handoffs/adherence-analysis.md) e o [relatório desta frente](docs/handoffs/adherence-validation.md) para contratos, configuração, testes e pendências dos colegas.
 
 ## Dados reais validados nesta entrega
 
