@@ -18,6 +18,6 @@
 - [ ] Automatizar o fluxo de salvar, anotar, recarregar e remover no navegador.
 - [ ] Ampliar coleta com escolha explícita de modalidades, estratégia de atualização e recuperação de execuções interrompidas.
 - [ ] Decidir quando consultar itens/anexos, com rastreabilidade própria e limites de escopo.
-- [ ] Implementar exportação das selecionadas com fontes, datas e anotações.
+- [x] Implementar exportação CSV do resumo das selecionadas com fontes, datas e anotações.
 - [ ] Antes de publicação: definir hospedagem Node/SQLite, persistência, backups, autenticação e proteção de acesso. Não publicar esta demonstração sem esse desenho.
 - [ ] Atualizar o ESLint quando todos os plugins do Next.js declararem suporte à versão atual, removendo o override transitivo quando o upstream corrigir a dependência.
