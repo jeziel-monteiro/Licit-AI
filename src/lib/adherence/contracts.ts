@@ -22,7 +22,7 @@ export type InputIdentity = {
   inputs: AnalysisInputs; inputBytes: number; limitations: string[];
 };
 export type ProviderSettings = {
-  provider: "openai"; model: string; maxOutputTokens: number; maxInputBytes: number;
+  provider: "openai" | "gemini"; model: string; maxOutputTokens: number; maxInputBytes: number;
   timeoutMs: number; deadlineMs: number; maxRetries: number;
 };
 export type TokenUsage = { inputTokens: number; outputTokens: number; totalTokens: number; cachedInputTokens: number | null; reasoningTokens: number | null };
