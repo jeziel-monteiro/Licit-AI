@@ -4,9 +4,26 @@
 
 Ferramenta local, em português brasileiro, para pesquisar um recorte de compras públicas do PNCP, conferir a origem e organizar uma seleção comercial. O foco inicial é equipamento de informática em São Paulo. O recorte, a UF e a modalidade são configuráveis.
 
-As etapas 1 e 2 estão implementadas: importação real e rastreável, perfil de uma empresa, pesquisa com filtros e paginação, detalhes, seleção e anotações persistentes. Na frente `opportunity-analysis`, a etapa 3 acrescenta análise individual via OpenAI, persistência, reutilização e indicação de resultados preliminares. Sem chave, a aplicação mostra “IA não configurada”. A validação de evidências e a revisão humana ainda dependem das integrações da equipe.
+O fluxo atual inclui importação rastreável, perfil versionado, pesquisa, seleção e anotações persistentes. A análise de aderência valida citações da descrição, registra revisões humanas e pode usar Gemini ou OpenAI. As oportunidades selecionadas também podem receber um resumo gerado com Gemini e exportado em CSV.
 
 O produto auxilia a triagem comercial. Não determina habilitação jurídica, não garante elegibilidade e não envia propostas.
+
+## Arquitetura
+
+[![Diagrama da arquitetura do LicitAI](docs/licitai-architecture.png)](docs/licitai-architecture.html)
+
+[Baixe o diagrama interativo](docs/licitai-architecture.html) e abra o HTML localmente no navegador para explorar os componentes, conexões e modos claro/escuro.
+
+O importador consulta a API pública do PNCP, valida e normaliza os registros e grava os dados e sua origem em SQLite. As páginas e ações do Next.js consultam essa base no servidor; o navegador apresenta oportunidades, análises, revisões e seleções. A análise de aderência e o resumo das selecionadas são executados sob demanda. O Gemini gera ambos; a análise individual pode usar OpenAI quando Gemini não estiver configurado. Evidências, decisões humanas e resumos versionados ficam no SQLite. O resumo pode ser exportado em CSV.
+
+| Parte | Código principal |
+| --- | --- |
+| Importação PNCP | `src/lib/pncp` |
+| Páginas e ações | `src/app` |
+| Persistência local | `src/lib/db.ts` |
+| Aderência, evidências e revisão | `src/lib/adherence` |
+| Resumo e exportação | `src/lib/summary.ts`, `src/app/api/selecionadas/resumo` |
+| Integração Gemini | `src/lib/server/gemini.ts` |
 
 ## Instalação e execução
 
@@ -98,19 +115,19 @@ O smoke test verifica HTTP, conteúdo renderizado no servidor, CSS e o endpoint 
 
 ## Análise de aderência — etapa 3
 
-Atualize seu `.env` com os campos OpenAI de [.env.example](.env.example), mantendo a chave somente no servidor. O modelo inicial configurável é `gpt-5.6-terra`. Em detalhes, “Analisar aderência” compara a oportunidade com o perfil persistido. A execução é explícita; abrir páginas não chama o modelo.
+Configure `GEMINI_API_KEY` ou os campos OpenAI de [.env.example](.env.example), mantendo a chave somente no servidor. Quando há chave Gemini, a análise individual usa Gemini; caso contrário, usa OpenAI, se configurada. Em detalhes, “Analisar aderência” compara a oportunidade com o perfil persistido. A execução é explícita; abrir páginas não chama o modelo. O resumo das selecionadas exige Gemini.
 
-O resultado fica **preliminar** até que o adaptador real de validação de evidências seja integrado. Nenhum validador simulado é utilizado na aplicação. Respostas pendentes podem ser validadas depois sem nova geração; falhas não são reutilizadas como resultados. A migração do banco é automática e aditiva, preservando os dados existentes.
+O resultado gerado passa por validação de evidências literais da descrição. A interface permite registrar concordância ou discordância humana, sem transformar a análise em decisão jurídica. Falhas não são reutilizadas como resultados. As migrações do banco são automáticas e aditivas.
 
 ```bash
 npm run eval:adherence          # apresenta os cinco casos reais, sem chamada externa
 npm run eval:adherence -- --run # exige chave; até cinco gerações, com retries configurados
 ```
 
-Não havia chave disponível durante a implementação; a API OpenAI **não foi validada com uma chamada real**. As classificações propostas nos casos de avaliação aguardam revisão humana. Veja o [handoff de integração](docs/handoffs/adherence-analysis.md) e o [relatório desta frente](docs/handoffs/adherence-validation.md) para contratos, configuração, testes e pendências dos colegas.
+Veja o [handoff de integração](docs/handoffs/adherence-analysis.md) e o [relatório desta frente](docs/handoffs/adherence-validation.md) para contratos, configuração e testes da análise individual.
 
 ## Dados reais validados nesta entrega
 
 Em **12/11/2026**, foram realizadas consultas HTTP 200 ao endpoint oficial de publicações e ao endpoint de detalhe. O importador gravou **200 oportunidades reais distintas**, em dois recortes pequenos de SP/pregão eletrônico. A amostra versionada preserva 50 registros da primeira página do recorte de 12/11, com fonte e instante da coleta. Os 200 registros estão no banco local desta execução; uma instalação nova começa com 50 ao executar `npm run demo`.
 
-Consulte [docs/pncp.md](docs/pncp.md) para os parâmetros, campos, evidências e limitações da validação. As decisões técnicas estão em [docs/architecture.md](docs/architecture.md), os checks executados em [docs/validation.md](docs/validation.md) e os próximos passos em [docs/next-steps.md](docs/next-steps.md).
+Consulte [docs/pncp.md](docs/pncp.md) para os parâmetros, campos, evidências e limitações da validação. As decisões das etapas iniciais estão em [docs/architecture.md](docs/architecture.md), os checks executados em [docs/validation.md](docs/validation.md) e os próximos passos em [docs/next-steps.md](docs/next-steps.md).
