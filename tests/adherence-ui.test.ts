@@ -10,6 +10,7 @@ const cssHook = registerHooks({ load(url, context, nextLoad) {
   return url.endsWith(".module.css") ? { format: "module", source: "export default {};", shortCircuit: true } : nextLoad(url, context);
 } });
 const { AdherenceContent, AnalysisStatusBadge } = await import("../src/components/adherence/view");
+const { EvidencePanel } = await import("../src/components/adherence/evidence-panel");
 cssHook.deregister();
 const view = (state: AnalysisState): AnalysisView => ({
   state, configured: true, canValidate: false, analysisId: "test-id", analyzedAt: "2026-11-12T21:00:00Z",
@@ -48,4 +49,9 @@ test("texto do modelo é escapado e não vira HTML executável", () => {
   const current = view("pending_validation"); current.result!.justification = '<script>alert("teste")</script>';
   const html = renderToStaticMarkup(React.createElement(AdherenceContent, { view: current }));
   assert.equal(html.includes("<script>"), false); assert.ok(html.includes("&lt;script&gt;"));
+});
+test("validação sem citação mostra lacuna sem afirmar que encontrou trecho", () => {
+  const html = renderToStaticMarkup(React.createElement(EvidencePanel, { evidence: [], missingInformation: ["Especificação ausente"], validation: "approved" }));
+  assert.match(html, /Sem citação/);
+  assert.equal(html.includes("Trechos encontrados"), false);
 });
