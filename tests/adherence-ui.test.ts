@@ -10,6 +10,7 @@ const cssHook = registerHooks({ load(url, context, nextLoad) {
   return url.endsWith(".module.css") ? { format: "module", source: "export default {};", shortCircuit: true } : nextLoad(url, context);
 } });
 const { AdherenceContent, AnalysisStatusBadge } = await import("../src/components/adherence/view");
+const { EvidencePanel } = await import("../src/components/adherence/evidence-panel");
 cssHook.deregister();
 const view = (state: AnalysisState): AnalysisView => ({
   state, configured: true, canValidate: false, analysisId: "test-id", analyzedAt: "2026-11-12T21:00:00Z",
@@ -26,11 +27,11 @@ test("listagem exibe classificação apenas para resultado atual validado", () =
 test("detalhes distinguem resultado preliminar de aprovação de evidências", () => {
   const html = renderToStaticMarkup(React.createElement(AdherenceContent, { view: view("pending_validation") }));
   for (const expected of ["Resultado preliminar", "Classificação preliminar", "Resposta recebida", "Estrutura aprovada", "Evidências não aprovadas", "Critérios atendidos", "Critérios conflitantes"]) assert.ok(html.includes(expected), expected);
-  assert.equal(html.includes("Classificação validada"), false);
+  assert.equal(html.includes("Classificação com evidências aprovadas"), false);
 });
 test("resultado desatualizado não é apresentado como classificação atual", () => {
   const html = renderToStaticMarkup(React.createElement(AdherenceContent, { view: view("stale") }));
-  assert.match(html, /desatualizado/); assert.match(html, /Classificação anterior/); assert.equal(html.includes("Classificação validada"), false);
+  assert.match(html, /desatualizado/); assert.match(html, /Classificação anterior/); assert.equal(html.includes("Classificação com evidências aprovadas"), false);
 });
 test("falhas técnicas mostram erro seguro sem classificação comercial", () => {
   const html = renderToStaticMarkup(React.createElement(AdherenceContent, { view: { ...view("failed"), failure: { code: "timeout", retryable: true } } }));
@@ -42,10 +43,15 @@ test("estado sem credencial é explícito", () => {
 });
 test("rejeição semântica não recebe rótulo de classificação final", () => {
   const html = renderToStaticMarkup(React.createElement(AdherenceContent, { view: view("rejected") }));
-  assert.match(html, /Validação rejeitada/); assert.match(html, /Evidências reprovadas/); assert.equal(html.includes("Classificação validada"), false);
+  assert.match(html, /Validação rejeitada/); assert.match(html, /Evidências reprovadas/); assert.equal(html.includes("Classificação com evidências aprovadas"), false);
 });
 test("texto do modelo é escapado e não vira HTML executável", () => {
   const current = view("pending_validation"); current.result!.justification = '<script>alert("teste")</script>';
   const html = renderToStaticMarkup(React.createElement(AdherenceContent, { view: current }));
   assert.equal(html.includes("<script>"), false); assert.ok(html.includes("&lt;script&gt;"));
+});
+test("validação sem citação mostra lacuna sem afirmar que encontrou trecho", () => {
+  const html = renderToStaticMarkup(React.createElement(EvidencePanel, { evidence: [], missingInformation: ["Especificação ausente"], validation: "approved" }));
+  assert.match(html, /Sem citação/);
+  assert.equal(html.includes("Trechos encontrados"), false);
 });

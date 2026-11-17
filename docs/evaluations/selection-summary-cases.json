@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "source": "data/pncp-sample.json",
+  "notice": "Casos PNCP reais para avaliação do resumo. Expectativas editoriais, ainda sem revisão cruzada nem medição de qualidade do modelo.",
+  "cases": [
+    { "id": "57522468000163-1-000227/2026", "check": "Citar este ID e conferir aquisição de computadores sem copiar valor de outro registro.", "humanReview": "pending" },
+    { "id": "03659166002156-1-000159/2026", "check": "Citar este ID e distinguir alimentos de equipamentos de informática.", "humanReview": "pending" },
+    { "id": "00394452000103-1-024299/2026", "check": "Citar este ID e não atribuir manutenção de viaturas à oportunidade de computadores.", "humanReview": "pending" },
+    { "id": "07722779000106-1-000144/2026", "check": "Citar este ID e apontar a especificação ausente sem inventar materiais.", "humanReview": "pending" },
+    { "id": "60453032000174-1-000310/2026", "check": "Citar este ID e separar impressoras 3D dos demais objetos.", "humanReview": "pending" }
+  ]
+}

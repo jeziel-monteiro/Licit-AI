@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Arquitetura do LicitAI",
+    "quality_profile": "showcase",
+    "viewBox": [1210, 760]
+  },
+  "components": [
+    { "id": "pncp", "type": "external", "label": "PNCP", "sublabel": "API pública", "pos": [45, 210], "size": [150, 72] },
+    { "id": "importador", "type": "backend", "label": "Importador", "sublabel": "valida e normaliza", "pos": [280, 210], "size": [170, 72] },
+    { "id": "sqlite", "type": "database", "label": "SQLite", "sublabel": "dados e versões", "pos": [535, 210], "size": [160, 72] },
+    { "id": "next", "type": "backend", "label": "Next.js", "sublabel": "páginas e ações", "pos": [780, 210], "size": [160, 72] },
+    { "id": "navegador", "type": "frontend", "label": "Navegador", "sublabel": "revisão e seleção", "pos": [1025, 210], "size": [150, 72] },
+    { "id": "aderencia", "type": "backend", "label": "Aderência", "sublabel": "evidências e revisão", "pos": [650, 450], "size": [190, 72] },
+    { "id": "resumo", "type": "backend", "label": "Resumo", "sublabel": "selecionadas e CSV", "pos": [970, 450], "size": [190, 72] },
+    { "id": "gemini", "type": "external", "label": "Gemini API", "sublabel": "geração sob demanda", "pos": [810, 640], "size": [190, 72] }
+  ],
+  "connections": [
+    { "id": "coleta", "from": "pncp", "to": "importador", "label": "coleta" },
+    { "id": "grava", "from": "importador", "to": "sqlite", "label": "dados + origem" },
+    { "id": "consulta", "from": "sqlite", "to": "next", "label": "consulta local" },
+    { "id": "telas", "from": "next", "to": "navegador", "label": "telas e ações" },
+    { "id": "analise", "from": "next", "to": "aderencia", "label": "analisar", "fromSide": "bottom", "toSide": "top" },
+    { "id": "sintese", "from": "next", "to": "resumo", "label": "resumir", "fromSide": "bottom", "toSide": "top" },
+    { "id": "geracaoAderencia", "from": "aderencia", "to": "gemini", "label": "gerar análise", "fromSide": "bottom", "toSide": "top" },
+    { "id": "geracaoResumo", "from": "resumo", "to": "gemini", "label": "gerar síntese", "fromSide": "bottom", "toSide": "top" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "Fluxo local", "items": ["Coleta pública do PNCP com origem preservada", "Páginas e ações consultam o SQLite no servidor"] },
+    { "dot": "violet", "title": "Análise assistida", "items": ["Gemini gera análises e resumos sob demanda", "Evidências, revisão humana e versões ficam no SQLite"] }
+  ]
+}
